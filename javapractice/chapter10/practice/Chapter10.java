@@ -16,10 +16,6 @@ public class Chapter10 {
             e.printStackTrace();
         }
 
-        // try-catch文を記述
-        // ・throwSQLExceptionメソッドを呼び出し
-        // ・SQLExceptionをキャッチして、メッセージとスタックトレースを出力
-        // ・"throwSQLExceptionの呼び出し終了"のメッセージを出力
         try {
         	Chapter10.throwSQLException();
         }	catch (SQLException e) {
@@ -31,9 +27,6 @@ public class Chapter10 {
         System.out.println("mainメソッド終了");
     }
 
-    // validIndexメソッドを作成
-    // ・indexがarrayのサイズの範囲内なら、インデックスの要素を出力
-    // ・サイズの範囲外なら、IllegalArgumentExceptionをスロー
     public static void validIndex(int[] array, int index) {
         if (array.length <= index) {
             throw new IllegalArgumentException(index + " はサイズの範囲外です");
