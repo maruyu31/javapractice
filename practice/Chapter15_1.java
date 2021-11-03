@@ -14,4 +14,5 @@ public class Chapter15_1 {
         
         return gcd(b, a % b);
     }
+    
 }
